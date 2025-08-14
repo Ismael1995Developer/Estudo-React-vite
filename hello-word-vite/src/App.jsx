@@ -1,23 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+// Style/Css
+import "./App.css";
+
+//Componentes
+import FirstComponents from "./components/FirstComponents";
+import TemplateExpressions from "./components/TemplateExpressions";
+import MyComponent from "./components/MyComponent";
+import Eventos from "./components/events";
+import Challenge from "./components/Challenge";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
         <h1>Hello world</h1>
-
         <h2>Estudando React</h2>
+        <p>ismael</p>
+        <FirstComponents />
+        <TemplateExpressions />
+        <MyComponent />
+        <Eventos />
+        <Challenge />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
